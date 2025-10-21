@@ -9,50 +9,52 @@ CONFIG += c++17
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+INCLUDEPATH += $$PWD/include
+
 SOURCES += \
-    archive.cpp \
-    archivedialog.cpp \
-    block.cpp \
-    game.cpp \
-    gamehelp.cpp \
-    main.cpp \
-    mainscene.cpp \
-    modechoosescene.cpp \
-    objects.cpp \
-    pausedialog.cpp \
-    player.cpp \
-    prop.cpp \
-    resultdialog.cpp \
-    settingdialog.cpp
+    src/archive.cpp \
+    src/archivedialog.cpp \
+    src/block.cpp \
+    src/game.cpp \
+    src/gamehelp.cpp \
+    src/main.cpp \
+    src/mainscene.cpp \
+    src/modechoosescene.cpp \
+    src/objects.cpp \
+    src/pausedialog.cpp \
+    src/player.cpp \
+    src/prop.cpp \
+    src/resultdialog.cpp \
+    src/settingdialog.cpp
 
 HEADERS += \
-    archive.h \
-    archivedialog.h \
-    block.h \
-    game.h \
-    gamehelp.h \
-    mainscene.h \
-    modechoosescene.h \
-    objects.h \
-    pausedialog.h \
-    player.h \
-    prop.h \
-    resultdialog.h \
-    settingdialog.h
+    include/archive.h \
+    include/archivedialog.h \
+    include/block.h \
+    include/game.h \
+    include/gamehelp.h \
+    include/mainscene.h \
+    include/modechoosescene.h \
+    include/objects.h \
+    include/pausedialog.h \
+    include/player.h \
+    include/prop.h \
+    include/resultdialog.h \
+    include/settingdialog.h
 
 FORMS += \
-    archive.ui \
-    archivedialog.ui \
-    gamehelp.ui \
-    mainscene.ui \
-    modechoosescene.ui \
-    pausedialog.ui \
-    resultdialog.ui \
-    settingdialog.ui
+    ui/archive.ui \
+    ui/archivedialog.ui \
+    ui/gamehelp.ui \
+    ui/mainscene.ui \
+    ui/modechoosescene.ui \
+    ui/pausedialog.ui \
+    ui/resultdialog.ui \
+    ui/settingdialog.ui
 
 TRANSLATIONS += \
-    TomAndJerryQLink_en_US.ts \
-    TomAndJerryQLink_zh_CN.ts
+    translation/TomAndJerryQLink_en_US.ts \
+    translation/TomAndJerryQLink_zh_CN.ts
 
 CONFIG += lrelease
 CONFIG += embed_translations

@@ -21,6 +21,7 @@ qrc_*.cpp
 *.lib
 *.o
 *.obj
+*.qm
 
 # IDE & OS
 .vscode/
