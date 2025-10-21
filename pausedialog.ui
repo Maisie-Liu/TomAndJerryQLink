@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PauseDialog</class>
+ <widget class="QDialog" name="PauseDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>游戏暂停</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color: rgb(255, 240, 130);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>方正舒体</family>
+       <pointsize>58</pointsize>
+       <kerning>true</kerning>
+       <fontweight>Thin</fontweight>
+      </font>
+     </property>
+     <property name="text">
+      <string>游戏暂停</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_continue">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>22</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/res/mainScene/optionBtn.PNG);
+font: 22pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>继续游戏</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_back">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/res/mainScene/optionBtn.PNG);</string>
+        </property>
+        <property name="text">
+         <string>返回主菜单</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_save">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/res/mainScene/optionBtn.PNG);</string>
+        </property>
+        <property name="text">
+         <string>存档</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_load">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/res/mainScene/optionBtn.PNG);</string>
+        </property>
+        <property name="text">
+         <string>读档</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_3" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>80</number>
+      </property>
+      <property name="leftMargin">
+       <number>80</number>
+      </property>
+      <property name="rightMargin">
+       <number>80</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_help">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/res/mainScene/helpBtn.PNG);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_setting">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>22</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/res/mainScene/settingBtn.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

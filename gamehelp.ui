@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameHelp</class>
+ <widget class="QDialog" name="GameHelp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>568</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>游戏帮助</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 240, 130);
+font: 14pt &quot;楷体_GB2312&quot;;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3" stretch="5,1">
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>操作方法（单人模式默认 玩家1）</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QWidget" name="widget" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout" stretch="1,4,3">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>玩家1</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame">
+               <property name="styleSheet">
+                <string notr="true">border-image: url(:/res/Game/img/WASD.png);</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <family>楷体_GB2312</family>
+                 <pointsize>14</pointsize>
+                 <italic>false</italic>
+                 <bold>false</bold>
+                 <kerning>true</kerning>
+                </font>
+               </property>
+               <property name="text">
+                <string>W：上移一步 
+A：左移一步  
+S：下移一步  
+D：右移一步  
+</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="indent">
+                <number>-1</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_2" native="true">
+            <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,4,3">
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>玩家2</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_2">
+               <property name="styleSheet">
+                <string notr="true">border-image: url(:/res/Game/img/udlr.png);</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>↑：上移一步 
+←：左移一步  
+↓：下移一步  
+→：右移一步  
+</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>道具·单人模式</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <layout class="QGridLayout" name="gridLayout" rowstretch="1,2,3,1" columnstretch="1,1,3" rowminimumheight="1,1,1,1" columnminimumwidth="1,1,3">
+          <property name="leftMargin">
+           <number>6</number>
+          </property>
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>重排</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame_3">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/res/prop/img/ExtraTime.PNG);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QFrame" name="frame_6">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/res/prop/img/Shuffle.png);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>提示</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QFrame" name="frame_4">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/res/prop/img/Hint.png);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QFrame" name="frame_5">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/res/prop/img/Flash.PNG);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>加时</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>瞬移</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>延长剩余时间30秒</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_6">
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>10s 内会⾼亮⼀对可能连接的⽅块，被消除后再⾼亮下⼀对，直到 10s 时间结束</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="label_10">
+            <property name="styleSheet">
+             <string notr="true">font: 11pt &quot;楷体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>5s 内允许通过⿏标单击移动⻆⾊位置。
+⻆⾊移动到的位置必须通过空地可到达，否则点击不产⽣任何效果。如果点击到⽅块，且⻆⾊可以移动到该⽅块旁，则⻆⾊移动到该⽅块旁，该⽅块被激活。</string>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_12">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>所有⽅块位置重排</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="title">
+          <string>道具·双人模式</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2" rowstretch="1,2,1,1,1" columnstretch="1,1,3" rowminimumheight="1,1,1,1,1" columnminimumwidth="1,1,3">
+          <property name="horizontalSpacing">
+           <number>10</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>20</number>
+          </property>
+          <item row="3" column="0">
+           <widget class="QFrame" name="frame_9">
+            <property name="minimumSize">
+             <size>
+              <width>60</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/res/prop/img/Dizzy.PNG);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_15">
+            <property name="text">
+             <string>提示</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QFrame" name="frame_7">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>60</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/res/prop/img/ExtraTime.PNG);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QFrame" name="frame_8">
+            <property name="minimumSize">
+             <size>
+              <width>60</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/res/prop/img/Hint.png);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>加时</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_20">
+            <property name="text">
+             <string>重排</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QFrame" name="frame_10">
+            <property name="minimumSize">
+             <size>
+              <width>60</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/res/prop/img/Freeze.png);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QFrame" name="frame_11">
+            <property name="minimumSize">
+             <size>
+              <width>60</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/res/prop/img/Shuffle.png);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_17">
+            <property name="text">
+             <string>晕眩</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_21">
+            <property name="text">
+             <string>冻结</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_14">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>延长剩余时间30秒</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_16">
+            <property name="styleSheet">
+             <string notr="true">font: 12pt &quot;楷体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>10s 内会⾼亮⼀对可能连接的⽅块，被消除后再⾼亮下⼀对，直到 10s 时间结束</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="label_19">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>所有⽅块位置重排</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLabel" name="label_18">
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot;楷体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>对⼿ 10s 内移动⽅向颠倒（上下左右颠倒）</string>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="label_22">
+            <property name="styleSheet">
+             <string notr="true">font: 14pt &quot;楷体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>对⼿ 3s 内⽆法移动</string>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_3" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,3,1">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_forward">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/res/mainScene/forwardBtn.PNG);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_back">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>楷体</family>
+          <pointsize>22</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/res/mainScene/optionBtn.PNG);
+font: 22pt &quot;楷体&quot;;</string>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_after">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/res/mainScene/afterwardBtn.PNG);
+border : 0px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
